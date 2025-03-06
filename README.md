@@ -47,7 +47,6 @@ HTML/
 │── uploads/      # Directory for uploaded files
 │── templates/    # HTML template files
 │── app.py        # Main Flask application script
-│── test.py       # Testing script
 ```
 
 ## Usage
