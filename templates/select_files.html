@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Files to Generate Excel</title>
+</head>
+<body>
+    <h1>Select Files to Generate Excel</h1>
+    <form action="{{ url_for('generate_excel') }}" method="post">
+      {% for file in files %}
+        <input type="checkbox" name="selected_files" value="{{ file }}">{{ file }}<br>
+      {% endfor %}
+      <input type="submit" value="Generate Excel">
+    </form>
+</body>
+</html>
